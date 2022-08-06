@@ -13,9 +13,24 @@ html{
 }
 
 body{
-  background-color: #282C34;
+  background-color: #fff;
 }
 
 a{
   text-decoration: none;
+}
+
+.btn{
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: #0177D2;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  letter-spacing: 2px;
 }
