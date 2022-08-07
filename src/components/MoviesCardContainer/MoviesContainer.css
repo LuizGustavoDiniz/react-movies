@@ -1,0 +1,141 @@
+/*home section*/
+
+main{
+    display: flex;
+    flex-flow: row;
+}
+
+.home{
+    margin: 4rem auto;
+    height: 100%;
+    width: 90vw;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .movies-container{
+    height: 46rem;
+    width: 30rem;
+    margin: 5rem 1.5rem;
+    display: flex;
+    flex-flow: column;
+    transition: transform 0.2s;
+}
+
+.home .movies-container:hover{
+    transform: scale(1.1);
+}
+
+.home .movies-container .movie-poster{
+    width: 100%;
+    height: 34.2rem;
+}
+
+.home .movies-container .movie-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.home .movies-container .card-body{
+    background-color: #282C34;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.home .movies-container .card-body .card-title{
+    height: 7.4rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    padding:  2rem 1rem;
+    text-transform: uppercase;
+    
+}
+
+.home .movies-container .card-body .card-text{
+    transform: translateY(-50%);
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home .movies-container .card-body i{
+    font-size: 2.3rem;
+    color: #0177D2;
+    padding: 0.5rem 1rem;
+}
+
+.home .movies-container .card-body .btn-container{
+  text-align: center;
+}
+
+
+/*Grupo de botoes de Genero section*/
+
+
+.genre-group-container{
+    height: 108rem;
+    margin-top: 9rem;
+    margin-left: 1rem;
+    background-color: #282C34;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border-radius: 0.7rem;
+}
+
+.genre-group-container .group-link{
+    text-transform: uppercase;
+   font-size: 1.5rem;
+   background-color: #0177D2;
+   padding: 1rem;
+   margin-bottom: 2rem;
+   color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 590px) {
+
+    .menu-burguer{
+        font-size: 3rem;
+        display: block;
+        color: #fff;
+    }
+
+    .genre-group-container{
+        background-color: #282C34;
+        position: absolute;
+        top: -2.7rem; left: -100%;
+        width: 30rem;
+        height: 106rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 2;
+        margin-left: 0;
+    }
+
+    main .genre-group-container.active{
+        left: 0;
+        opacity: 1;
+    }
+
+
+
+}

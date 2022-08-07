@@ -1,7 +1,7 @@
 import'./home.css'
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
 import api from '../../services/api'
+import MoviesContainer from '../../components/MoviesCardContainer/MoviesContainer'
 
 const Home = () => {
 
@@ -27,36 +27,9 @@ const Home = () => {
 
     }, [])
 
-  
-    return(
-        <>
-        <main>
-
-             <section className='home'>
-             
-             
-             {movies.map((movie) => {
-                 return(
-                       <div key={movie.id} className="movies-container">
-                        <div className="movie-poster">
-                        <img src= {`https://image.tmdb.org/t/p/original/${movie.poster_path}`}  alt="..."/>
-                        </div>
-                          <div className="card-body">
-                            <h5 className="card-title">{movie.title}</h5>
-                            <p className="card-text"><i className="fab fa-imdb text-light"></i>Nota: 6.5/10</p>
-                            <div className='btn-container'>
-                            <a href="..." className="btn">ver detalhes</a> 
-                            </div>
-                          </div>
-                      </div>
-                 )
-             })}
-                    
-
-             </section>
-        </main>
-        </>
-    )
+    return <MoviesContainer movies={movies}/>
+    
+   
 
 }
 
