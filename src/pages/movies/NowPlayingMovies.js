@@ -1,9 +1,7 @@
-import'./home.css'
-import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import api from '../../services/api'
 
-const Home = () => {
+const NowPlayingMovies = () => {
 
     const [movies, setMovies] = useState([])
 
@@ -11,7 +9,7 @@ const Home = () => {
 
         const loadMovies = async () => {
 
-            const allMovies = await api.get('movie/popular',{
+            const allMovies = await api.get('movie/now_playing',{
                 params: {
                     api_key: '52c666c7bba4767d261680869bdc65e5',
                     language: 'pt-BR'
@@ -26,7 +24,6 @@ const Home = () => {
         loadMovies()
 
     }, [])
-
   
     return(
         <>
@@ -60,4 +57,4 @@ const Home = () => {
 
 }
 
-export default Home
+export default NowPlayingMovies
