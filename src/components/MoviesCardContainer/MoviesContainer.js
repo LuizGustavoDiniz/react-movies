@@ -2,67 +2,17 @@ import './MoviesContainer.css'
 import { Link } from 'react-router-dom'
 import '../Header/Header.css'
 
+
 const MovieContainer = (props) => {
-
-    const showMenu = (event) => {
-        const element = event.target
-        const navBar = document.querySelector('.navbar')
-        const menuGenreGroup = document.querySelector('.genre-group-container')
-        const menuGenre = document.querySelector('#menu-genre')
-
-        navBar.classList.toggle('active')
-        element.classList.toggle('fa-times')
-
-        const isActive = navBar.className.includes('active')
-
-        if(isActive){
-           menuGenreGroup.classList.remove('active')
-           menuGenre.classList.remove('fa-grip-lines-vertical')
-        }
-
-    }
-
-     const showGenresMenu = (event) => {
-        const element = event.target
-        const navBar = document.querySelector('.navbar')
-        const menuBurguer = document.querySelector('#menu-burguer')
-        const menuGenreGroup = document.querySelector('.genre-group-container')
-     
-        menuGenreGroup.classList.toggle('active')
-        element.classList.toggle('fa-grip-lines-vertical')
-
-        const isActive = menuGenreGroup.className.includes('active')
-
-        if(isActive){
-            navBar.classList.remove('active')
-            menuBurguer.classList.remove('fa-times')
-        }
-         
-     }
-
 
     return(
         <>
-
-        <header>
-            <section className='header'>
-            <span onClick={(event) => showGenresMenu(event)} className="fas fa-grip-lines" id="menu-genre"></span>
-            <div className='logo'>
-              <Link  to='/'>react<span>movies</span></Link>
-            </div>
-            <nav className='navbar'>
-                 <Link className='menu-link' to='/movies/nowplaying'>em cartaz</Link>
-                 <Link className='menu-link' to='/movies/categories'>filmes</Link>
-                 <Link className='menu-link' to='/series/all'>séries</Link>
-            </nav>
-
-            <span onClick={(event) => showMenu(event)} className='fas fa-bars' id='menu-burguer'></span>
-            </section>
-        </header>
-
         <main>
 
         <nav className='genre-group-container'>
+
+                <h2 className='genre-title'>gêneros</h2>
+
                 <Link className='group-link' to='/movies/genre/28'>ação</Link>
                 <Link className='group-link' to='/movies/genre/12'>aventura</Link>
                 <Link className='group-link' to='/movies/genre/16'>animação</Link>

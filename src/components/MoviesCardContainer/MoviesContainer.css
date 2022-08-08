@@ -6,7 +6,7 @@ main{
 }
 
 .home{
-    margin: 4rem auto;
+    margin: 13rem auto;
     height: 100%;
     width: 90vw;
     background-color: #fff;
@@ -82,24 +82,40 @@ main{
 
 
 .genre-group-container{
-    height: 108rem;
-    margin-top: 9rem;
+    height: 112rem;
+    width: 20rem;
+    margin-top: 16rem;
     margin-left: 1rem;
-    background-color: #282C34;
-    padding: 3rem;
+    padding: 3rem 3rem;
     display: flex;
+    align-items: center;
     flex-flow: column;
     text-align: center;
+    border: 1px solid #ccc;
     border-radius: 0.7rem;
 }
 
-.genre-group-container .group-link{
+.genre-group-container .genre-title{
+    color: #282C34;
+    border-bottom: 2px solid #ccc;
+    width: 13rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
+}
+
+.genre-group-container .group-link{
+   text-transform: uppercase;
    font-size: 1.5rem;
-   background-color: #0177D2;
+   font-weight: 600;
    padding: 1rem;
    margin-bottom: 2rem;
-   color: #fff;
+   color: #282C34;
+}
+
+.genre-group-container .group-link:hover{
+    border-bottom: 2px solid #ccc;
 }
 
 

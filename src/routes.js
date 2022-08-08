@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
 import CheckWindowWidth from './components/window/CheckWindowWidth'
 import Home from './pages/home/index'
 import NowPlayingMovies from './pages/movies/NowPlayingMovies'
@@ -9,6 +10,7 @@ const RoutesApp = () => {
    return(
     <BrowserRouter>
     <CheckWindowWidth/>
+     <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/movies/nowplaying' element={<NowPlayingMovies/>} />
