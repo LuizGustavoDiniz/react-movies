@@ -13,7 +13,7 @@ const MovieContainer = (props) => {
 
                 <h2 className='genre-title'>gêneros</h2>
 
-                <Link className='group-link' to='/movies/genre/28'>ação</Link>
+                <Link className='group-link' to='/movies/genre/28/acao'>ação</Link>
                 <Link className='group-link' to='/movies/genre/12'>aventura</Link>
                 <Link className='group-link' to='/movies/genre/16'>animação</Link>
                 <Link className='group-link' to='/movies/genre/35'>comédia</Link>
@@ -33,8 +33,10 @@ const MovieContainer = (props) => {
             </nav>
 
              <section className='home'>
+             <h1>filmes genero {props.genre}</h1>
              {props.movies.map((movie) => {
                  return(
+                    
                        <div key={movie.id} className="movies-container">
                         <div className="movie-poster">
                         <img src= {`https://image.tmdb.org/t/p/original/${movie.poster_path}`}  alt="..."/>

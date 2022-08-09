@@ -6,6 +6,7 @@ import api from '../../services/api'
 const MoviesByGenres = () => {
 
     const { id } = useParams()
+    const {genre} = useParams()
 
     const [movies, setMovies] = useState([])
 
@@ -30,7 +31,7 @@ const MoviesByGenres = () => {
 
     }, [id])
   
-    return <MoviesContainer movies={movies}/>
+    return <MoviesContainer movies={movies} genre={genre}/>
 
 }
 
