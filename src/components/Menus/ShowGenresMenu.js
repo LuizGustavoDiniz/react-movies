@@ -3,6 +3,7 @@ const showGenresMenu = (event) => {
     const navBar = document.querySelector('.navbar')
     const menuBurguer = document.querySelector('#menu-burguer')
     const menuGenreGroup = document.querySelector('.genre-group-container')
+    
  
     menuGenreGroup.classList.toggle('active')
     element.classList.toggle('fa-grip-lines-vertical')

@@ -5,21 +5,44 @@ main{
     flex-flow: row;
 }
 
+.movies-title1{
+    color: #282C34;
+    width: 55rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 12rem;
+    margin-left: 20.4rem;
+    padding: 1.5rem;
+    border-bottom: 2px solid #ccc;
+}
+
+.movies-title2{
+    color: #282C34;
+    width: 12.3rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 12rem;
+    margin-left: 25rem;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #ccc;
+}
+
 .home{
-    margin: 13rem auto;
+    margin: 0 auto;
     height: 100%;
     width: 90vw;
     background-color: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border-left: 2px solid #ccc;
 }
 
 .home .movies-container{
-    height: 46rem;
+    height: 58rem;
     width: 30rem;
-    margin: 5rem 1.5rem;
+    margin: 3rem 1.5rem;
     display: flex;
     flex-flow: column;
     transition: transform 0.2s;
@@ -43,13 +66,17 @@ main{
 }
 
 .home .movies-container .card-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #282C34;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
 .home .movies-container .card-body .card-title{
-    height: 7.4rem;
+    height: 7rem;
     color: #fff;
     font-size: 2rem;
     font-weight: 300;
@@ -59,7 +86,6 @@ main{
 }
 
 .home .movies-container .card-body .card-text{
-    transform: translateY(-50%);
     display: inline-block;
     font-size: 1.2rem;
     font-weight: 700;
@@ -80,19 +106,22 @@ main{
 
 /*Grupo de botoes de Genero section*/
 
-
 .genre-group-container{
     height: 112rem;
     width: 20rem;
-    margin-top: 16rem;
-    margin-left: 1rem;
+    margin-top: 5rem;
     padding: 3rem 3rem;
     display: flex;
     align-items: center;
     flex-flow: column;
     text-align: center;
     border: 1px solid #ccc;
-    border-radius: 0.7rem;
+    border-right: none;
+    opacity: 0;
+}
+
+main .genre-group-container.active{
+    opacity: 1;
 }
 
 .genre-group-container .genre-title{
@@ -110,7 +139,8 @@ main{
    font-size: 1.5rem;
    font-weight: 600;
    padding: 1rem;
-   margin-bottom: 2rem;
+   margin-bottom: 2.2rem;
+   height: 4rem;
    color: #282C34;
 }
 
@@ -119,6 +149,25 @@ main{
 }
 
 
+
+@media screen and (max-width: 1100px){
+
+    .movies-title1{
+        background-color: #0177D2;
+        text-align: center;
+        display: flex;
+    }
+
+    .movies-title2{
+       background-color: #0177D2;
+    }
+
+    .home{
+        background-color: tomato;
+        width: 70vw;
+    }
+
+}
 
 
 

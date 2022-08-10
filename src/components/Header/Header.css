@@ -18,7 +18,7 @@ header{
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .header .logo{
@@ -42,7 +42,6 @@ header{
 .header .navbar{
     font-size: 2rem;
     display: flex;
-    gap: 1.5rem;
 }
 
 .header .navbar .links-container{
@@ -52,7 +51,16 @@ header{
 }
 
 .header .navbar .menu-link{
+    text-align: center;
+    font-weight: bold;
     color: #fff;
+    padding: 0.5rem 0;
+    width: 12rem;
+}
+
+.header .navbar .menu-link:hover{
+    color: #282C34;
+    letter-spacing: 1.5px;
 }
 
 #menu-burguer{
@@ -79,8 +87,6 @@ header{
         display: block;
         color: #fff;
     }
-
-
     .header .navbar{
         background-color: tomato;
         position: absolute;
