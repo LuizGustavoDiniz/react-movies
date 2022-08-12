@@ -23,23 +23,23 @@ const MovieContainer = (props) => {
 
                 <h2 className='genre-title'>gêneros</h2>
 
-                <Link className='group-link' to='/movies/genre/28/ação'>ação</Link>
-                <Link className='group-link' to='/movies/genre/12/aventura'>aventura</Link>
-                <Link className='group-link' to='/movies/genre/16/animação'>animação</Link>
-                <Link className='group-link' to='/movies/genre/35/comédia'>comédia</Link>
-                <Link className='group-link' to='/movies/genre/80/crime'>crime</Link>
-                <Link className='group-link' to='/movies/genre/99/documentário'>documentário</Link>
-                <Link className='group-link' to='/movies/genre/18/drama'>drama</Link>
-                <Link className='group-link' to='/movies/genre/10751/família'>família</Link>
-                <Link className='group-link' to='/movies/genre/14/fantasia'>fantasia</Link>
-                <Link className='group-link' to='/movies/genre/36/história'>história</Link>
-                <Link className='group-link' to='/movies/genre/27/terror'>terror</Link>
-                <Link className='group-link' to='/movies/genre/10404/música'>música</Link>
-                <Link className='group-link' to='/movies/genre/9648/mistério'>mistério</Link>
-                <Link className='group-link' to='/movies/genre/10749/romance'>romance</Link>
-                <Link className='group-link' to='/movies/genre/878/ficção científica'>ficção científica</Link>
-                <Link className='group-link' to='/movies/genre/10752/guerra'>guerra</Link>
-                <Link className='group-link' to='/movies/genre/37/faroeste'>faroeste</Link>
+                <Link className='group-link' to='/28/ação'>ação</Link>
+                <Link className='group-link' to='/12/aventura'>aventura</Link>
+                <Link className='group-link' to='/16/animação'>animação</Link>
+                <Link className='group-link' to='/35/comédia'>comédia</Link>
+                <Link className='group-link' to='/80/crime'>crime</Link>
+                <Link className='group-link' to='/99/documentário'>documentário</Link>
+                <Link className='group-link' to='/18/drama'>drama</Link>
+                <Link className='group-link' to='/10751/família'>família</Link>
+                <Link className='group-link' to='/14/fantasia'>fantasia</Link>
+                <Link className='group-link' to='/36/história'>história</Link>
+                <Link className='group-link' to='/27/terror'>terror</Link>
+                <Link className='group-link' to='/10404/música'>música</Link>
+                <Link className='group-link' to='/9648/mistério'>mistério</Link>
+                <Link className='group-link' to='/10749/romance'>romance</Link>
+                <Link className='group-link' to='/878/ficção científica'>ficção científica</Link>
+                <Link className='group-link' to='/10752/guerra'>guerra</Link>
+                <Link className='group-link' to='/37/faroeste'>faroeste</Link>
             </nav>
 
 
@@ -56,7 +56,7 @@ const MovieContainer = (props) => {
                             <h5 className="card-title">{movie.title}</h5>
                             <p className="card-text"><i className="fab fa-imdb text-light"></i>Nota: {movie.vote_average}/10</p>
                             <div className='btn-container'>
-                            <a href="..." className="btn">ver detalhes</a> 
+                            <a href={`/movies/movie/details/${movie.id}`} className="btn">ver detalhes</a> 
                             </div>
                           </div>
                       </div>

@@ -30,9 +30,8 @@ main{
 .home{
     margin: 0 auto;
     height: 100%;
-    width: 90vw;
+    width: 83vw;
     background-color: #fff;
-    padding: 1.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -42,7 +41,7 @@ main{
 .home .movies-container{
     height: 58rem;
     width: 30rem;
-    margin: 3rem 1.5rem;
+    margin: 1.5rem 1.5rem;
     display: flex;
     flex-flow: column;
     transition: transform 0.2s;
@@ -117,11 +116,6 @@ main{
     text-align: center;
     border: 1px solid #ccc;
     border-right: none;
-    opacity: 0;
-}
-
-main .genre-group-container.active{
-    opacity: 1;
 }
 
 .genre-group-container .genre-title{
