@@ -13,7 +13,7 @@ main{
     margin-top: 12rem;
     margin-left: 20.4rem;
     padding: 1.5rem;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgb(141, 141, 141);
 }
 
 .movies-title2{
@@ -24,18 +24,18 @@ main{
     margin-top: 12rem;
     margin-left: 25rem;
     padding: 1.5rem 0;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgb(141, 141, 141);
 }
 
 .home{
     margin: 0 auto;
     height: 100%;
     width: 83vw;
-    background-color: #fff;
+    background-color : #ddd;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid rgb(141, 141, 141);
 }
 
 .home .movies-container{
@@ -114,13 +114,13 @@ main{
     align-items: center;
     flex-flow: column;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(141, 141, 141);
     border-right: none;
 }
 
 .genre-group-container .genre-title{
     color: #282C34;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgb(141, 141, 141);
     width: 13rem;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
