@@ -14,8 +14,7 @@ const Header = () => {
             </div>
             <nav className='navbar'>
                  <Link className='menu-link' to='/movies/nowplaying'>em cartaz</Link>
-                 <Link className='menu-link' to='/movies/categories'>filmes</Link>
-                 <Link className='menu-link' to='/series/all'>séries</Link>
+                 <Link className='menu-link' to='/bestMovies'>Melhores filmes</Link>
             </nav>
 
             <span onClick={(event) => showMenu(event)} className='fas fa-bars' id='menu-burguer'></span>

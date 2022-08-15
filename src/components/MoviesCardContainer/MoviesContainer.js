@@ -20,8 +20,10 @@ const MovieContainer = (props) => {
         <main>
 
         <nav className='genre-group-container'>
-
+                
                 <h2 className='genre-title'>gêneros</h2>
+                
+                
 
                 <Link className='group-link' to='/28/ação'>ação</Link>
                 <Link className='group-link' to='/12/aventura'>aventura</Link>

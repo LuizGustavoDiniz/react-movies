@@ -40,7 +40,7 @@ header{
 }
 
 .header .navbar{
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
 }
 
@@ -55,12 +55,12 @@ header{
     font-weight: bold;
     color: #fff;
     padding: 0.5rem 0;
-    width: 12rem;
+    width: 20rem;
 }
 
 .header .navbar .menu-link:hover{
     color: #282C34;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 #menu-burguer{
@@ -109,8 +109,12 @@ header{
 
 }
 
-@media screen and (max-width: 1090px) {
-    
+@media screen and (max-width: 1200px) {
+    #menu-genre{
+        font-size: 3rem;
+        display: block;
+        color: #fff;
+    }
     
 
 }
